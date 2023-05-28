@@ -28,6 +28,8 @@
   <string name="reset">Reset</string>
   <string name="app_logs">App Logs</string>
   <string name="ide_logs">IDE Logs</string>
+  <string name="enter_token">Enter Token</string>
+  <string name="github_token_summary">Github Authentication Token</string>
 
   <!-- LSP, Diagnostics & Completions -->
   <string name="label_splash_image">Splash image</string>
