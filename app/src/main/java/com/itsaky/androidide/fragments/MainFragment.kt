@@ -1,6 +1,6 @@
 package com.itsaky.androidide.fragments
 
-import com.itsaky.androidide.preferences.internal.GeneralPreferencesKt.githubAuthenticationToken
+import com.itsaky.androidide.preferences.internal.GeneralPreferences.githubAuthenticationToken
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -33,7 +33,7 @@ import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.lib.ProgressMonitor
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider
 import java.io.File
-import com.itsaky.androidide.preferences.internal.GeneralPreferencesKt
+import com.itsaky.androidide.preferences.internal.GeneralPreferences
 
 class MainFragment : BaseFragment(), OnProjectCreatedListener {
 
