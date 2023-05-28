@@ -71,3 +71,9 @@ var lastOpenedProject: String
   set(value) {
     prefManager.putString(LAST_OPENED_PROJECT, value)
   }
+
+var gradleInstallationDir: String
+  get() = prefManager.getString(GITHUB_AUTHENTICATION, "")
+  set(value) {
+    prefManager.putString(GITHUB_AUTHENTICATION, value)
+  }
