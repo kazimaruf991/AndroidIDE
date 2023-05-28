@@ -32,7 +32,7 @@ import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.lib.ProgressMonitor
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider
 import java.io.File
-import static com.itsaky.androidide.preferences.internal.GeneralPreferencesKt.githubAuthenticationToken;
+import static com.itsaky.androidide.preferences.internal.GeneralPreferencesKt.githubAuthenticationToken
 
 class MainFragment : BaseFragment(), OnProjectCreatedListener {
 
