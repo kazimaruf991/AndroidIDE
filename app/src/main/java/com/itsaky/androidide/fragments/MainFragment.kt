@@ -30,7 +30,9 @@ import com.itsaky.androidide.utils.flashSuccess
 import com.itsaky.androidide.viewmodel.MainViewModel
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.lib.ProgressMonitor
+import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider
 import java.io.File
+import static com.itsaky.androidide.preferences.internal.GeneralPreferencesKt.githubAuthenticationToken;
 
 class MainFragment : BaseFragment(), OnProjectCreatedListener {
 
@@ -137,6 +139,7 @@ class MainFragment : BaseFragment(), OnProjectCreatedListener {
       return@executeAsyncProvideError Git.cloneRepository()
         .setURI(url)
         .setDirectory(targetDir)
+        .setCredentialsProvider(UsernamePasswordCredentialsProvider("PRIVATE-TOKEN", githubAuthenticationToken()))
         .setProgressMonitor(progress)
         .call()
         .also { git = it }
