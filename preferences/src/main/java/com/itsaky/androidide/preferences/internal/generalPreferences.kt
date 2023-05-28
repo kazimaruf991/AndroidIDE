@@ -72,7 +72,7 @@ var lastOpenedProject: String
     prefManager.putString(LAST_OPENED_PROJECT, value)
   }
 
-var gradleInstallationDir: String
+var githubAuthenticationToken: String
   get() = prefManager.getString(GITHUB_AUTHENTICATION, "")
   set(value) {
     prefManager.putString(GITHUB_AUTHENTICATION, value)
