@@ -25,6 +25,7 @@ import com.itsaky.androidide.preferences.internal.CONFIRM_PROJECT_OPEN
 import com.itsaky.androidide.preferences.internal.ENABLE_MATERIAL_YOU
 import com.itsaky.androidide.preferences.internal.OPEN_PROJECTS
 import com.itsaky.androidide.preferences.internal.TERMINAL_USE_SYSTEM_SHELL
+import com.itsaky.androidide.preferences.internal.GITHUB_AUTHENTICATION
 import com.itsaky.androidide.preferences.internal.UI_MODE
 import com.itsaky.androidide.preferences.internal.autoOpenProjects
 import com.itsaky.androidide.preferences.internal.confirmProjectOpen
