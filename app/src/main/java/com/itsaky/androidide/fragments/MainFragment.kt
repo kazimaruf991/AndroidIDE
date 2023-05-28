@@ -1,6 +1,6 @@
 package com.itsaky.androidide.fragments
 
-import com.itsaky.androidide.preferences.internal.GeneralPreferences.githubAuthenticationToken
+import com.itsaky.androidide.preferences.internal.githubAuthenticationToken
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -33,7 +33,6 @@ import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.lib.ProgressMonitor
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider
 import java.io.File
-import com.itsaky.androidide.preferences.internal.GeneralPreferences
 
 class MainFragment : BaseFragment(), OnProjectCreatedListener {
 
@@ -140,7 +139,7 @@ class MainFragment : BaseFragment(), OnProjectCreatedListener {
       return@executeAsyncProvideError Git.cloneRepository()
         .setURI(url)
         .setDirectory(targetDir)
-        .setCredentialsProvider(UsernamePasswordCredentialsProvider("PRIVATE-TOKEN", githubAuthenticationToken()))
+        .setCredentialsProvider(UsernamePasswordCredentialsProvider("PRIVATE-TOKEN", githubAuthenticationToken))
         .setProgressMonitor(progress)
         .call()
         .also { git = it }
