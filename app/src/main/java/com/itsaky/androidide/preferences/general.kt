@@ -36,6 +36,7 @@ import com.itsaky.androidide.preferences.internal.githubAuthenticationToken
 import com.itsaky.androidide.resources.R.drawable
 import com.itsaky.androidide.resources.R.string
 import kotlinx.parcelize.Parcelize
+import com.google.android.material.textfield.TextInputLayout
 
 @Parcelize
 class GeneralPreferences(
