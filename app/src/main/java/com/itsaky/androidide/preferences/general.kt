@@ -195,8 +195,8 @@ class UseSytemShell(
 @Parcelize
 private class GithubAuthentication(
   override val key: String = GITHUB_AUTHENTICATION,
-  override val title: String = "Enter Token",
-  override val summary: String? = "Github Authentication Token",
+  override val title: Int = string.enter_token,
+  override val summary: Int? = string.github_token_summary,
 ) : EditTextPreference() {
 
   override fun onPreferenceChanged(preferece: Preference, newValue: Any?): Boolean {
