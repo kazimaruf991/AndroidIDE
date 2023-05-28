@@ -205,8 +205,7 @@ private class GithubAuthentication(
   }
 
   override fun onConfigureTextInput(input: TextInputLayout) {
-    input.setHint("Enter Token Here")
-    input.helperText = "Token"
+    input.setHint("Personal Access Token")
     input.isCounterEnabled = false
     input.editText!!.setText(githubAuthenticationToken)
   }
