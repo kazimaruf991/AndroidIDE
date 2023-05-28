@@ -32,6 +32,7 @@ import com.itsaky.androidide.preferences.internal.confirmProjectOpen
 import com.itsaky.androidide.preferences.internal.enableMaterialYou
 import com.itsaky.androidide.preferences.internal.uiMode
 import com.itsaky.androidide.preferences.internal.useSystemShell
+import com.itsaky.androidide.preferences.internal.githubAuthenticationToken
 import com.itsaky.androidide.resources.R.drawable
 import com.itsaky.androidide.resources.R.string
 import kotlinx.parcelize.Parcelize
