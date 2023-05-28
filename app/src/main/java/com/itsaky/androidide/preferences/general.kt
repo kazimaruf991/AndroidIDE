@@ -46,6 +46,7 @@ class GeneralPreferences(
     addPreference(InterfaceConfig())
     addPreference(ProjectConfig())
     addPreference(TerminalConfig())
+    addPreference(GithubAuthentication())
   }
 }
 
@@ -185,5 +186,25 @@ class UseSytemShell(
   override fun onPreferenceChanged(preferece: Preference, newValue: Any?): Boolean {
     useSystemShell = newValue as Boolean? ?: useSystemShell
     return true
+  }
+}
+
+@Parcelize
+private class GithubAuthentication(
+  override val key: String = GITHUB_AUTHENTICATION,
+  override val title: String = "Enter Token",
+  override val summary: String? = "Github Authentication Token",
+) : EditTextPreference() {
+
+  override fun onPreferenceChanged(preferece: Preference, newValue: Any?): Boolean {
+    githubAuthenticationToken = newValue as String? ?: ""
+    return true
+  }
+
+  override fun onConfigureTextInput(input: TextInputLayout) {
+    input.setHint("Enter Token Here")
+    input.helperText = "Token"
+    input.isCounterEnabled = false
+    input.editText!!.setText(githubAuthenticationToken)
   }
 }
