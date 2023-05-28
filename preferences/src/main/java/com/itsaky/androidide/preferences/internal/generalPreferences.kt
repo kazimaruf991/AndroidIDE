@@ -26,6 +26,7 @@ const val OPEN_PROJECTS = "idepref_general_autoOpenProjects"
 const val CONFIRM_PROJECT_OPEN = "idepref_general_confirmProjectOpen"
 const val TERMINAL_USE_SYSTEM_SHELL = "idepref_general_terminalShell"
 const val LAST_OPENED_PROJECT = "ide_last_project"
+const val GITHUB_AUTHENTICATION = "ide_github_token"
 
 const val NO_OPENED_PROJECT = "<NO_OPENED_PROJECT>"
 
